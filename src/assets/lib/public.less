@@ -1,0 +1,41 @@
+/**
+  * 公共样式 public
+  *
+ */
+ @import "./mixin";
+
+ /* input错误提示 */
+.inputItem {
+  position: relative;
+}
+.help {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  color: #f50049;
+}
+
+/* input 样式 */
+input:not[type="checkbox"] {
+  width: 100%;
+  padding: .625rem .9375rem;
+  height: 2.0625rem;
+  margin-bottom: 1.5625rem;
+  .border-radius(5px);
+  border:1px solid @borderColor;
+  background-color: transparent!important;
+}
+input[type="checkbox"] {
+  width: .75rem;
+  height: .75rem;
+  .border-radius(.125rem);
+  display: inline-block;
+  vertical-align: middle;
+}
+// 右侧箭头
+.mui-navigate-right:after, .mui-push-right:after {
+  right: 15px;
+  .font-dpr(13px);
+  color: @grayWhite;
+  font-weight: 600;
+}

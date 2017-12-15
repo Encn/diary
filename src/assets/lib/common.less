@@ -1,0 +1,101 @@
+@import "~assets/lib/mixin";
+
+.input-item {
+  display: -webkit-box;
+  border-bottom: 1px solid @borderColor;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  .input-desc {
+    display: block;
+    color: #333;
+    line-height: 32px;
+    padding: 0 5px;
+  }
+
+  i {
+    display: block;
+    width: 20px;
+    font-size: 18px;
+    padding-top: 8px;
+    color: @mainColor
+  }
+
+  input {
+    display: block;
+    -webkit-box-flex: 1;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border: 0;
+    background: 0 0;
+    border-radius: 0;
+  }
+
+  .input-item-error {
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 22px;
+    color: @redColor;
+  }
+}
+
+.vue-btn {
+  line-height: @base*64rem;
+  .btn-padding(@base*10rem @base*10rem, @base*30rem, @mainColor, #fff);
+
+  &.vue-btn-full {
+    display: block;
+  }
+
+  &.vue-btn-link {
+    background: #fff;
+    color: @mainColor;
+    border: 1px solid @mainColor;
+  }
+
+  &.vue-btn-red {
+    background: #FF4F4F;
+    color: #fff;
+  }
+}
+
+.share-dialog {
+  background: url('../icon_share.png') no-repeat;
+  background-size: auto 30px;
+  background-position: center 0;
+  padding-top: 45px;
+
+  p {
+    color: @mainColor;
+  }
+}
+
+.mint-msgbox{
+  .font-dpr(15px);
+  .mint-msgbox-header{
+    padding: @base*50rem 0;
+    .mint-msgbox-title{
+      .font-dpr(15px);
+    }
+  }
+  .mint-msgbox-content{
+    padding-bottom: @base*50rem;
+  }
+  .mint-msgbox-btns{
+    height: @base*84rem;
+    line-height: @base*84rem;
+    .mint-msgbox-btn{
+      .font-dpr(15px);
+    }
+  }
+}
+.mint-toast-text{
+  .font-dpr(10px);
+}

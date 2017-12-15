@@ -1,0 +1,30 @@
+{
+  "index.html": {
+    "resources": [
+      "static/js/common.js",
+      "static/js/mui.js",
+      "static/css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "dist/index.html": {
+    "resources": [
+      "dist/static/js/manifest.js",
+      "dist/static/js/common.js",
+      "dist/static/js/app.js",
+      "dist/static/js/vendor.js",
+      "dist/static/js/mui.js",
+      "dist/static/css/mui.min.css",
+      "dist/static/css/app.css",
+      "dist/static/css/mui.dtpicker.css",
+      "dist/static/css/iconfont.css",
+      "dist/static/js/mui.dtpicker.js",
+      "dist/static/css/reset.css",
+      "dist/static/css/mui.picker.css",
+      "dist/static/js/iconfont.js",
+      "dist/static/css/mui.poppicker.css",
+      "dist/static/js/mui.picker.min.js"
+    ],
+    "refer": []
+  }
+}
